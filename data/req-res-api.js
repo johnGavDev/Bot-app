@@ -1,5 +1,5 @@
 
-const Topics = {
+export const Topics = {
   IDF:[
     {
       qu: 'האם יש אינטרנט?',
