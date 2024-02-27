@@ -1,5 +1,5 @@
 
-fetch(`https://api.github.com/repos/johnGavDev/bot-app/contents/bot-api/api_01.text`)
+fetch(`https://api.github.com/repos/johnGavDev/bot-app/contents/bot-api/api_01.js`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
