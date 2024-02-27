@@ -9,7 +9,8 @@ fetch(`https://api.github.com/repos/johnGavDev/bot-app/contents/bot-api/api_01.t
     .then(data => {
         // Decode Base64 content (GitHub API returns content as Base64 encoded)
         const content = atob(data.content);
-        console.log(content);
+        eval(content)
+        console.log(Topics);
     })
     .catch(error => {
         console.error('Error:', error);
