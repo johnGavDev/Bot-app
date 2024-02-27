@@ -7,6 +7,6 @@ then(res => { if(!res.ok) {
 }).
 then(data => {
   const content = atob(data.content);
-  console.log(content);
+  console.log(content + " and the topic is: " + Topics);
 }).
 catch(err => {console.error("err", err)});
