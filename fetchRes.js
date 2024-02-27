@@ -6,4 +6,4 @@ then(data => {
   eval(content);
   console.log(Topics);
 }).
-catch(err => console.error(err));
+catch(err => {console.error("err", err)});
