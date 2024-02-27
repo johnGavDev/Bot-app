@@ -1,5 +1,5 @@
 
-fetch("https://api.github.com/repos/johnGavDev/bot-app/contents/data/req-res-api").
+fetch("https://api.github.com/repos/johnGavDev/bot-app/contents/data/req-res-api.js").
 then(res => { if(!res.ok) throw new Error('there is some network err') }).
 then(data => {
   const content =atob(data.content);
