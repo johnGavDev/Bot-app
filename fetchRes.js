@@ -4,12 +4,13 @@ const inp = document.getElementById('inp');
 const usercontainer = document.getElementById('user-container');
 
 fetch('https://api.github.com/repos/johnGavDev/bot-app/contents/data/user-db.json')
-    .then(response => response.json())
-    .then(datajs => {
+    .then(response => {
+      if(!response.ok) throw new Error('there is network error');
+      response.json();
+    })
+    .then(data => {
 
-      var data = JSON.parse(datajs)
-
-      console.log(data.users)
+      console.log(data.users);
 
       setInterval(() => {
         usercontainer.textContent = data.users;
