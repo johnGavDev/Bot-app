@@ -3,7 +3,7 @@ const btn = document.getElementById('sub-btn');
 const inp = document.getElementById('inp');
 const usercontainer = document.getElementById('user-container');
 
-fetch('users.json')
+fetch('https://api.github.com/repos/johnGavDev/bot-app/contents/data/user-db.json')
     .then(response => response.json())
     .then(data => {
 
