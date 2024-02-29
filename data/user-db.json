@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "chatroom": {
     "name": "General Chatroom",
     "description": "A chatroom for general discussions",
@@ -36,3 +37,12 @@
     ]
   }
 }
+=======
+  "messages": [
+    {
+      "id": "today",
+      "text": "some text"
+    }
+  ]
+}
+>>>>>>> 860f1ca (v2)
