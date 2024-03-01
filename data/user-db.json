@@ -1,5 +1,5 @@
 {
   "messages":[
-    { "id": "today", "text": "some text" }
+    { "id": "today", "text": "some text", "password": "333343" }
   ]
 }
