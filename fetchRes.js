@@ -29,7 +29,7 @@ const usercontainer = document.getElementById('user-container');
 fetch_db();
 
 async function fetch_db () {
-  const t_db = await fetch("https://api.github.com/repos/johnGavDev/bot-app/contents/data/user-db.json", {
+  const t_db = await fetch("https://raw.githubusercontent.com/johnGavDev/bot-app/main/data/db-users.json", {
     headers: {
       "PRIVATE-TOKEN": "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"
     }
