@@ -43,5 +43,5 @@ async function fetch_db () {
   if(!t_db.ok) throw new Error("Net Err");
 
   var t_db_con_org = JSON.parse(t_db.json());
-  console.log(t_db_con_org.messages[0]);
+  console.log(t_db_con_org);
 }
