@@ -30,10 +30,13 @@ fetch_db();
 
 let apiUrl = "https://raw.githubusercontent.com/johnGavDev/bot-app/main/data/db-users.json"
 
+
+
 async function fetch_db () {
   const t_db = await fetch("https://raw.githubusercontent.com/johnGavDev/bot-app/main/data/db-users.json", {
     headers: {
-      "PRIVATE-TOKEN": "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"
+      "PRIVATE-TOKEN": "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",
+      'Content-Type': 'application/json'
     }
   });
 
