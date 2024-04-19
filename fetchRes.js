@@ -28,6 +28,8 @@ const usercontainer = document.getElementById('user-container');
 
 fetch_db();
 
+let apiUrl = "https://raw.githubusercontent.com/johnGavDev/bot-app/main/data/db-users.json"
+
 async function fetch_db () {
   const t_db = await fetch("https://raw.githubusercontent.com/johnGavDev/bot-app/main/data/db-users.json", {
     headers: {
